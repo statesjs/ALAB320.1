@@ -1,12 +1,19 @@
-/* Overall container */
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+}
 #root {
   display: flex;
   flex-direction: row;
   width: 800px;
-  height: 600px; /* keep height if you want */
+  height: 600px;
 
   border: 2px solid black;
-  overflow: hidden; /* (contain overflow inside) */
+  overflow: hidden;
 }
 
 /* Left Side */
@@ -15,7 +22,7 @@
   padding: 1rem;
   border-right: 2px solid gray;
   box-sizing: border-box;
-  overflow-y: auto; /* enable vertical scroll */
+  overflow-y: auto;
 }
 
 /* Search bar */
