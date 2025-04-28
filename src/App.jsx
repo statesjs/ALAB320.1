@@ -6,7 +6,7 @@ import "./App.css";
 //LEFT SIDE
 function Header() {
   return (
-    <div className="Header left">
+    <div className="Header">
       <h2>Employee Directory</h2>
     </div>
   );
@@ -23,8 +23,8 @@ function EmployeeListItem() {
         <img className="image left" src="/manager.png" />
       </div>
       <div>
-        <h2>Name</h2>
-        <h3>Role</h3>
+        <h3>Name</h3>
+        <h4>Role</h4>
       </div>
     </div>
   );
@@ -44,36 +44,62 @@ function EmployeeList() {
 
 //RIGHT SIDE
 
+function HeaderRight() {
+  return (
+    <div className="HeaderRight">
+      <div className="left-icon">
+        <img src="/left-arrow.png" alt="Back" />
+      </div>
+      <div className="center-text">
+        <h2>Employee</h2>
+      </div>
+      <div className="right-spacer"></div>
+    </div>
+  );
+}
+
 function Card() {
   return (
     <div className="Card right">
-      <div className="Header right">
-        <h2>Employee</h2>
-      </div>
       <div className="main right">
         <div>
           <img className="image left" src="/manager.png" />
         </div>
         <div>
           <h2>Julie Taylor</h2>
-          <h3>VP of Marketing</h3>
+          <h4>VP of Marketing</h4>
         </div>
       </div>
-      <div>
-        <h2>Call Office</h2>
-        <h3>781-000-0002</h3>
+      <div className="detail">
+        <div className="detailColumn">
+          <h3>Call Office</h3>
+          <h4>781-000-0002</h4>
+        </div>
+        <img src="/right-arrow.png" />
       </div>
-      <div>
-        <h2>Call Mobile</h2>
-        <h3>617-000-0002</h3>
+      <div className="detail">
+        <div className="detailColumn">
+          <h3>Call Mobile</h3>
+          <h4>617-000-0002</h4>
+        </div>
+
+        <img src="/right-arrow.png" />
       </div>
-      <div>
-        <h2>SMS</h2>
-        <h3>617-000-0002</h3>
+      <div className="detail">
+        <div className="detailColumn">
+          <h3>SMS</h3>
+          <h4>617-000-0002</h4>
+        </div>
+
+        <img src="/right-arrow.png" />
       </div>
-      <div>
-        <h2>Email</h2>
-        <h3>example@email.com</h3>
+      <div className="detail">
+        <div className="detailColumn">
+          <h3>Email</h3>
+          <h4>example@email.com</h4>
+        </div>
+
+        <img src="/right-arrow.png" />
       </div>
     </div>
   );
@@ -89,6 +115,7 @@ function App() {
         <EmployeeList />
       </div>
       <div className="EmployeePage">
+        <HeaderRight />
         <Card />
       </div>
     </>

@@ -29,7 +29,7 @@ body {
 .SearchBar {
   width: 100%;
   padding: 0.5rem;
-
+  margin-bottom: 1rem;
   font-size: 1rem;
 }
 
@@ -37,7 +37,6 @@ body {
 .EmployeeList {
   display: flex;
   flex-direction: column;
-  gap: 1rem; /* spacing between employees */
 }
 
 /* Single Employee Item */
@@ -46,8 +45,7 @@ body {
   align-items: center;
   gap: 1rem;
   padding: 0.5rem;
-  background-color: #f9f9f9;
-  border-radius: 8px;
+  border-top: 1px solid lightgrey;
 }
 
 /* Right Side */
@@ -58,40 +56,78 @@ body {
   overflow-y: auto;
   display: flex;
   flex-direction: column;
-  align-items: center; /* horizontal center */
-  justify-content: center; /* vertical center */
 }
 
 /* Main Card Info */
 .Card {
-  background-color: #fafafa;
-  border-radius: 8px;
-  padding: 1rem;
+  border-style: solid;
+  border-color: rgba(128, 128, 128, 0.637);
+  border-radius: 4px;
+
   display: flex;
   flex-direction: column;
-  gap: 1rem;
 }
 
-/* Image Styling */
-img {
-  width: 50px;
-  height: 50px;
-  object-fit: cover;
+.detail {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+  border-top: 1px solid lightgrey;
+  text-align: left;
+}
+
+.detailColumn {
+  display: flex;
+  flex-direction: column;
 }
 
 /* Header Titles */
+
 .Header {
   font-size: 1.5rem;
   font-weight: bold;
   text-align: center;
+  margin-bottom: 1rem;
+  padding-top: 10px;
+}
+
+.HeaderRight {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.left-icon img {
+  width: 24px;
+  height: 24px;
+}
+
+.center-text {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.right-spacer {
+  width: 24px;
 }
 
 .main {
   display: flex;
   align-items: center;
   gap: 1rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
-
+img {
+  float: right;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
 .image {
   width: 80px;
   height: 80px;
@@ -102,6 +138,11 @@ img {
 /* Text Alignment */
 h1,
 h2,
-h3 {
-  margin: 0;
+h3,
+h4 {
+  margin: 0.25rem;
+}
+
+h4 {
+  color: rgba(128, 128, 128, 0.637);
 }
